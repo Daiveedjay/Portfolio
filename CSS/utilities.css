@@ -1,0 +1,35 @@
+/* UTILITIES */
+.ta_c {
+  text-align: center;
+}
+
+.d_f {
+  display: flex;
+}
+
+.d_g {
+  display: grid;
+}
+
+.ai_c {
+  align-items: center;
+}
+
+.ai_fs {
+  align-items: flex-start;
+}
+
+.jc_c {
+  justify-content: center;
+}
+
+.jc_sb {
+  justify-content: space-between;
+}
+
+.jc_se {
+  justify-content: space-evenly;
+}
+.fd_c {
+  flex-direction: column;
+}
