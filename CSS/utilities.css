@@ -1,4 +1,12 @@
 /* UTILITIES */
+:root {
+  --dark-text-color: #272341;
+  --neutral-color: #fff;
+  --primary-color-light: #00cdac;
+  --primary-color-dark: #02aab0;
+  --body-font: "Montserrat", sans-serif;
+}
+
 .ta_c {
   text-align: center;
 }
@@ -15,8 +23,8 @@
   align-items: center;
 }
 
-.ai_fs {
-  align-items: flex-start;
+.ai_s {
+  align-items: start;
 }
 
 .jc_c {
@@ -32,4 +40,92 @@
 }
 .fd_c {
   flex-direction: column;
+}
+section {
+  padding: 5rem 0;
+}
+
+.header_primary {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.header_secondary {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mw-small {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.mw-medium {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.btn {
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  transform: translateX(-100%) skew(-20deg);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover:before {
+  transform: translateX(-2.5%) skew(20deg);
+}
+
+.btn--primary {
+  background-image: linear-gradient(
+    135deg,
+    var(--primary-color-dark),
+    var(--primary-color-light)
+  );
+  color: transparent;
+  border: 2px solid var(--primary-color-light);
+}
+.btn--primary::before {
+  background-image: linear-gradient(
+    135deg,
+    var(--primary-color-dark),
+    var(--primary-color-light)
+  );
+  color: transparent;
+}
+.btn--primary:hover {
+  -webkit-text-fill-color: var(--neutral-color);
+}
+
+.btn--light {
+  background-image: var(--neutral-color);
+  color: var(--neutral-color);
+}
+
+.btn--light:before {
+  background: var(--neutral-color);
+}
+.btn--light:hover {
+  -webkit-text-fill-color: var(--primary-color-light);
+}
+
+button {
+  font-family: var(--body-font);
 }
