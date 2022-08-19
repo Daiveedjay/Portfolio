@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio | Main Page</title>
+    <!-- Todo: put here your site title -->
+    <title>[David Jaja] | Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta
+      name="keywords"
+      content="[Daiveed], [David Jaja], Front-End Developer"
+    />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[David Jaja] | Developer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,15 +27,22 @@
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/utilities.css" />
     <link rel="stylesheet" href="./CSS/media.css" />
+
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
   </head>
   <body>
     <section id="hero" class="hero__section d_f ai_c">
       <div class="hero__text-container d_f fd_c ai_s">
-        <h1 class="hero__lead--text">
+        <h1 class="hero__lead--text load-hidden">
           Hi, my name is <span>David Jaja</span><br />
           I'm a Junior Front-End Developer
         </h1>
-        <a class="hero--button btn btn--primary" href="#"> Know More</a>
+        <a class="hero--button btn btn--primary load-hidden" href="#">
+          Know More</a
+        >
       </div>
     </section>
     <section class="about__section">
@@ -79,7 +94,17 @@
       </div>
     </section>
     <section class="project__section">
-      <h2 class="project__section--header header_primary ta_c">My Projects</h2>
+      <h2 class="project__section--header header_primary ta_c">
+        My Projects
+        <lord-icon
+          src="https://cdn.lordicon.com/gakvfgma.json"
+          trigger="loop"
+          delay="1000"
+          colors="primary:#272341"
+          style="width: 50px; height: 50px; font-weight: 700"
+        >
+        </lord-icon>
+      </h2>
       <div class="project__container d_f mw-medium">
         <div class="project__text--area d_f fd_c">
           <h2 class="project__name header_secondary">Space Tourism</h2>
@@ -95,9 +120,9 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <div class="project__img--area">
+        <a href="#" class="project__img--area">
           <img src="./IMG/Space-Tourism.jpg" alt="" />
-        </div>
+        </a>
       </div>
       <div class="project__container d_f mw-medium">
         <div class="project__text--area d_f fd_c">
@@ -114,9 +139,9 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <div class="project__img--area">
+        <a href="#" class="project__img--area">
           <img src="./IMG/Blogr.png" alt="" />
-        </div>
+        </a>
       </div>
       <div class="project__container d_f mw-medium">
         <div class="project__text--area d_f fd_c">
@@ -133,9 +158,9 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <div class="project__img--area">
+        <a href="#" class="project__img--area">
           <img src="./IMG/Huddle.png" alt="" />
-        </div>
+        </a>
       </div>
       <div class="more__projects d_f jc_c">
         <a
@@ -190,8 +215,12 @@
         >
           <input type="text" name="fullname" placeholder="Full Name" />
           <input type="email" name="email" placeholder="Email Address" />
-          <input type="text" name="message" placeholder="Message" />
-          <textarea name="message" cols="30" rows="8"></textarea>
+          <textarea
+            name="message"
+            cols="30"
+            rows="8"
+            placeholder="Message"
+          ></textarea>
           <button
             class="cta_button btn btn--light"
             type="submit"
@@ -203,7 +232,7 @@
       </div>
     </section>
     <section class="footer__section">
-      <div class="footer__container">
+      <div class="footer__container d_f fd_c ai_c">
         <a href="#hero" class="back-top-top">
           <lord-icon
             src="https://cdn.lordicon.com/eflfmgmj.json"
@@ -225,9 +254,13 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
+        <div class="dashed__line"></div>
+        <p class="copyright">&copy 2022, Made by <a href="#">Daiveed</a></p>
       </div>
     </section>
   </body>
+
+  <script defer type="module" src="./index.js"></script>
 </html>
 
 <!-- proficient

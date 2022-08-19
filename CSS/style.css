@@ -24,6 +24,17 @@
   font-family: var(--body-font);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00cdac;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
 body {
   font-family: var(--body-font);
 }
@@ -153,18 +164,11 @@ html {
   font-size: 1.8rem;
 }
 
-/* .about__content--button:hover {
-  -webkit-text-fill-color: var(--primary-color-light);
-} */
-
 .about__content--button:hover:before {
   transform: translateX(-2.5%) skew(20deg);
 }
 
 /* PROJECT SECTION STYLING */
-.project__section {
-  border: 2px solid blue;
-}
 
 .project__section--header {
   color: var(--dark-text-color);
@@ -218,8 +222,6 @@ html {
 }
 /* PROJECT SECTION STYLING */
 .cta__section {
-  /* min-height: 75vh; */
-  /* border: 2px solid red; */
   background-image: linear-gradient(135deg, #02aab0, #00cdac);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
@@ -229,7 +231,6 @@ html {
 }
 
 .cta__container {
-  /* border: 2px solid red; */
   gap: 1rem;
 }
 
@@ -251,7 +252,6 @@ html {
   margin-right: 1rem;
 }
 .cta__form {
-  /* border: 2px slateblue solid; */
   width: 40rem;
   gap: 1rem;
   margin-top: 3rem;
@@ -263,12 +263,18 @@ html {
   padding: 1.5rem 2rem;
   border: none;
   transition: all 0.2s ease-in-out;
+  font-family: var(--body-font);
 }
 
 .cta__form input:focus,
 .cta__form textarea:focus {
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
   outline: none;
+  font-family: var(--body-font);
+}
+
+.cta__form textarea {
+  resize: none;
 }
 
 .cta_button {
@@ -283,12 +289,36 @@ html {
 
 .footer__section {
   border: 2px solid rebeccapurple;
-  height: 60vh;
   background: var(--footer-bg);
 }
 
+.footer__container {
+  gap: 4rem;
+}
+
 .footer__socials {
-  gap: 2rem;
-} /* .footer__socials--link img {
-  width: 20px;
-} */ ;
+  gap: 4rem;
+}
+
+.footer__socials--link {
+  color: var(--neutral-color);
+  font-size: 3rem;
+}
+
+.dashed__line {
+  width: 50%;
+  border-bottom: 2px solid #464646;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: var(--neutral-color);
+}
+
+.copyright a {
+  color: var(--neutral-color);
+  font-weight: 700;
+}
+
+.load-hidden {
+  visibility: hidden;
+}
