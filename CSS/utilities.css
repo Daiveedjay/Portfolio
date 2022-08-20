@@ -80,7 +80,7 @@ a {
 .btn:before {
   position: absolute;
   content: "";
-  top: 0;
+  top: 1px;
   left: -10%;
   width: 120%;
   height: 100%;

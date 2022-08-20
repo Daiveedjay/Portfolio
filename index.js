@@ -1,12 +1,31 @@
-// import initScrollReveal from "./scripts/scrollReveal";
-// import initTiltEffect from "./scripts/tiltAnimation";
-// import { targetElements, defaultProps } from "./data/scrollRevealConfig";
+"use strict";
 
-import initScrollReveal from "./Scripts/scrollReveal";
+const allSections = document.querySelectorAll("section");
+// console.log(allSections);
+const options = {
+  root: null,
+  threshold: 0.3,
+};
 
-import initTiltEffect from "./Scripts/tiltAnimation";
+const sectionObserver = new IntersectionObserver(callback, options);
 
-import { targetElements, defaultProps } from "./Data/scrollRevealConfig";
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+});
 
-initScrollReveal(targetElements, defaultProps);
-initTiltEffect();
+document.querySelectorAll(".left__column").forEach((column) => {
+  column.classList.add("hidden__left");
+});
+document.querySelectorAll(".right__column").forEach((column) => {
+  column.classList.add("hidden__right");
+});
+
+function callback(entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  console.log(entry);
+
+  observer.unobserve(entry.target);
+}

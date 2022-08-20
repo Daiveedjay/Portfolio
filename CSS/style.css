@@ -91,6 +91,7 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
   color: var(--neutral-color);
+  overflow-x: hidden;
 }
 
 .about__container {
@@ -102,10 +103,12 @@ html {
 .about--header {
   text-transform: uppercase;
   color: var(--neutral-color);
+  /* transition: all 1.5s ease-in; */
 }
 
 .about__content {
   height: auto;
+  transition: all 1.5s ease-in;
 }
 
 .about__content--text {
@@ -169,7 +172,9 @@ html {
 }
 
 /* PROJECT SECTION STYLING */
-
+.project__section {
+  overflow-x: hidden;
+}
 .project__section--header {
   color: var(--dark-text-color);
   max-width: 110rem;
@@ -191,6 +196,9 @@ html {
   flex: 1.5;
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  border: 2px solid red;
 }
 
 .project__img--area img {
@@ -228,6 +236,7 @@ html {
   color: #fff;
   margin-bottom: -1px;
   padding: 15rem 0 10rem;
+  overflow-x: hidden;
 }
 
 .cta__container {
@@ -319,6 +328,28 @@ html {
   font-weight: 700;
 }
 
-.load-hidden {
-  visibility: hidden;
+.hidden {
+  opacity: 0;
+  transform: translateX(100%);
 }
+
+.hidden__left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.hidden__right {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.left__column {
+  transition: all 1.5s ease-in-out;
+}
+.right__column {
+  transition: all 1.5s ease-in-out;
+}
+
+/* .js-tilt {
+  border: 2px solid red;
+} */

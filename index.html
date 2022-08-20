@@ -23,6 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+      integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/utilities.css" />
@@ -36,23 +42,21 @@
   <body>
     <section id="hero" class="hero__section d_f ai_c">
       <div class="hero__text-container d_f fd_c ai_s">
-        <h1 class="hero__lead--text load-hidden">
+        <h1 class="hero__lead--text">
           Hi, my name is <span>David Jaja</span><br />
           I'm a Junior Front-End Developer
         </h1>
-        <a class="hero--button btn btn--primary load-hidden" href="#">
-          Know More</a
-        >
+        <a class="hero--button btn btn--primary" href="#"> Know More</a>
       </div>
     </section>
     <section class="about__section">
       <div class="about__container">
         <h2 class="about--header ta_c header_primary">About Me</h2>
         <div class="about__content d_f">
-          <div class="about__content--image d_f jc_c ai_c">
+          <div class="about__content--image d_f jc_c ai_c left__column">
             <img src="./IMG/David-image.jpeg" alt="A picture of me" />
           </div>
-          <div class="about__content--text d_f fd_c jc_c">
+          <div class="about__content--text d_f fd_c jc_c right__column">
             <p class="about__content--bio">
               I'm a 20 year old Nigerian Junior Front-End Developer, passionate
               about developing sustainable and scalable social and technical
@@ -106,7 +110,7 @@
         </lord-icon>
       </h2>
       <div class="project__container d_f mw-medium">
-        <div class="project__text--area d_f fd_c">
+        <div class="project__text--area d_f fd_c left__column">
           <h2 class="project__name header_secondary">Space Tourism</h2>
           <p class="project__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
@@ -120,12 +124,14 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <a href="#" class="project__img--area">
-          <img src="./IMG/Space-Tourism.jpg" alt="" />
+        <a href="#" class="project__img--area right__column">
+          <div class="js-tilt">
+            <img src="./IMG/Space-Tourism.jpg" alt="" />
+          </div>
         </a>
       </div>
       <div class="project__container d_f mw-medium">
-        <div class="project__text--area d_f fd_c">
+        <div class="project__text--area d_f fd_c left__column">
           <h2 class="project__name header_secondary">Blogr</h2>
           <p class="project__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
@@ -139,12 +145,14 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <a href="#" class="project__img--area">
-          <img src="./IMG/Blogr.png" alt="" />
+        <a href="#" class="project__img--area right__column">
+          <div class="js-tilt">
+            <img src="./IMG/Blogr.png" alt="" />
+          </div>
         </a>
       </div>
       <div class="project__container d_f mw-medium">
-        <div class="project__text--area d_f fd_c">
+        <div class="project__text--area d_f fd_c left__column">
           <h2 class="project__name header_secondary">Huddle</h2>
           <p class="project__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
@@ -158,8 +166,10 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <a href="#" class="project__img--area">
-          <img src="./IMG/Huddle.png" alt="" />
+        <a href="#" class="project__img--area right__column">
+          <div class="js-tilt">
+            <img src="./IMG/Huddle.png" alt="" />
+          </div>
         </a>
       </div>
       <div class="more__projects d_f jc_c">
@@ -260,9 +270,21 @@
     </section>
   </body>
 
-  <script defer type="module" src="./index.js"></script>
+  <!-- <script defer type="module" src="./index.js"></script> -->
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".project__img--area"), {
+      reverse: true,
+      glare: true,
+      "max-glare": 0.5,
+      max: 5,
+    });
+  </script>
 </html>
 
+<!-- data-tilt
+            data-tilt-max="4"
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.5" -->
 <!-- proficient
               in, , , and . -->
 
