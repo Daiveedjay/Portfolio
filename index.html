@@ -41,6 +41,14 @@
   </head>
   <body>
     <section id="hero" class="hero__section d_f ai_c">
+      <div class="switch-container">
+        <input type="checkbox" id="switch" />
+        <label for="switch">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
       <div class="hero__text-container d_f fd_c ai_s">
         <h1 class="hero__lead--text">
           Hi, my name is <span>David Jaja</span><br />
@@ -270,7 +278,7 @@
     </section>
   </body>
 
-  <!-- <script defer type="module" src="./index.js"></script> -->
+  <script defer type="module" src="./index.js"></script>
   <script type="text/javascript">
     VanillaTilt.init(document.querySelectorAll(".project__img--area"), {
       reverse: true,
