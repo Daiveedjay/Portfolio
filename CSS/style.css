@@ -41,6 +41,7 @@ body {
   font-family: var(--body-font);
   background: var(--body-color);
   color: var(--body-text-color);
+  transition: all ease-in-out 0.5s;
 }
 
 html {
@@ -469,4 +470,5 @@ input:checked + label .fa-sun {
   --body-color: #232222;
   --body-color: #333333;
   --body-text-color: #fff;
+  transition: all ease-in-out 0.5s;
 }
