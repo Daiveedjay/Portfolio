@@ -469,9 +469,9 @@ input:checked + label .fa-sun {
 } */
 
 .dark__mode {
-  --dark-text-color: #fff;
-  --body-color: #232222;
-  --body-color: #333333;
-  --body-text-color: #fff;
+  --dark-text-color: #fff !important;
+  --body-color: #232222 !important;
+  --body-color: #333333 !important;
+  --body-text-color: #fff !important;
   transition: all ease-in-out 0.5s;
 }
