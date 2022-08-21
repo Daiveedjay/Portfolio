@@ -23,21 +23,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
-      integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/utilities.css" />
     <link rel="stylesheet" href="./CSS/media.css" />
-
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
   </head>
   <body>
     <section id="hero" class="hero__section d_f ai_c">
@@ -118,7 +107,7 @@
         </lord-icon>
       </h2>
       <div class="project__container d_f mw-medium">
-        <div class="project__text--area d_f fd_c left__column">
+        <div class="project__text--area d_f fd_c left__column hidden__left">
           <h2 class="project__name header_secondary">Space Tourism</h2>
           <p class="project__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
@@ -132,10 +121,8 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <a href="#" class="project__img--area right__column">
-          <div class="js-tilt">
-            <img src="./IMG/Space-Tourism.jpg" alt="" />
-          </div>
+        <a href="#" class="project__img--area right__column hidden__right">
+          <img class="" src="./IMG/Space-Tourism.jpg" alt="" />
         </a>
       </div>
       <div class="project__container d_f mw-medium">
@@ -153,10 +140,8 @@
             <a class="btn btn--primary" href="#">View Source</a>
           </div>
         </div>
-        <a href="#" class="project__img--area right__column">
-          <div class="js-tilt">
-            <img src="./IMG/Blogr.png" alt="" />
-          </div>
+        <a href="#" class="project__img--area right__column hidden__right">
+          <img src="./IMG/Blogr.png" alt="" />
         </a>
       </div>
       <div class="project__container d_f mw-medium">
@@ -175,9 +160,7 @@
           </div>
         </div>
         <a href="#" class="project__img--area right__column">
-          <div class="js-tilt">
-            <img src="./IMG/Huddle.png" alt="" />
-          </div>
+          <img src="./IMG/Huddle.png" alt="" />
         </a>
       </div>
       <div class="more__projects d_f jc_c">
@@ -278,15 +261,28 @@
     </section>
   </body>
 
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+    integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+  <script
+    defer
+    src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+  ></script>
+
   <script defer type="module" src="./index.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     VanillaTilt.init(document.querySelectorAll(".project__img--area"), {
       reverse: true,
       glare: true,
       "max-glare": 0.5,
       max: 5,
     });
-  </script>
+  </script> -->
 </html>
 
 <!-- data-tilt
