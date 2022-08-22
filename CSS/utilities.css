@@ -5,7 +5,6 @@
   --primary-color-light: #00cdac;
   --primary-color-dark: #02aab0;
   --body-color: #fff;
-  --body-font: "Montserrat", sans-serif;
 }
 
 .ta_c {
@@ -128,8 +127,4 @@ a {
 }
 .btn--light:hover {
   -webkit-text-fill-color: var(--primary-color-light);
-}
-
-button {
-  font-family: var(--body-font);
 }
