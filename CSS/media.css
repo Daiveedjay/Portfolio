@@ -1,0 +1,53 @@
+/* DESKTOP */
+/* Over 1600px Screen */
+@media (min-width: 100.1em) {
+  html {
+    /* 15px per rem */
+    font-size: 93.75%;
+  }
+}
+/* 1600px Screen and below */
+@media (max-width: 100em) {
+  html {
+    /* 13px per rem */
+    font-size: 81.25%;
+  }
+}
+/* 1500px Screen and below */
+@media (max-width: 93.75em) {
+  html {
+    /* 12px per rem */
+    font-size: 75%;
+  }
+}
+/* 1400px and below */
+@media (max-width: 87.5em) {
+  html {
+    /* 11px per rem */
+    font-size: 68.75%;
+  }
+}
+/* 1300px and below */
+@media (max-width: 81.25em) {
+  html {
+    /* 10px per rem */
+    font-size: 62.5%;
+  }
+}
+/* 1100px and below */
+@media (max-width: 68.75em) {
+  html {
+    /* 9px per rem */
+    font-size: 56.25%;
+  }
+}
+/* 900px and below */
+@media (max-width: 56.25em) {
+  .hero__lead--text {
+    text-align: center;
+  }
+
+  /* .hero__lead--text {
+    
+  } */
+}

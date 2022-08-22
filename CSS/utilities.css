@@ -59,13 +59,16 @@ a {
   text-decoration: none;
 }
 
+.mw-small,
+.mw-medium {
+  margin: 0 auto;
+}
+
 .mw-small {
   max-width: 90rem;
-  margin: 0 auto;
 }
 .mw-medium {
   max-width: 110rem;
-  margin: 0 auto;
 }
 
 .btn {

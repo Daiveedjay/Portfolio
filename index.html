@@ -29,16 +29,20 @@
     <link rel="stylesheet" href="./CSS/media.css" />
   </head>
   <body>
-    <section id="hero" class="hero__section d_f ai_c">
-      <div class="switch-container">
-        <input type="checkbox" id="switch" />
-        <label for="switch">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-          <span class="ball"></span>
-        </label>
-      </div>
-      <div class="hero__text-container d_f fd_c ai_s">
+    <section id="hero" class="hero__section d_f ai_c fd_c">
+      <nav class="d_f jc_sb mw-medium">
+        <span class="logo"><img src="./IMG/favicon-32x32.png" alt="" /></span>
+        <div class="switch-container">
+          <input type="checkbox" id="switch" />
+          <label for="switch">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </nav>
+
+      <div class="hero__text-container d_f fd_c ai_s jc_c mw-medium">
         <h1 class="hero__lead--text">
           Hi, my name is <span>David Jaja</span><br />
           I'm a Junior Front-End Developer
@@ -98,10 +102,11 @@
       <h2 class="project__section--header header_primary ta_c">
         My Projects
         <lord-icon
+          class="lord-icon"
           src="https://cdn.lordicon.com/gakvfgma.json"
           trigger="loop"
           delay="1000"
-          colors="primary:#272341"
+          colors="primary:#333"
           style="width: 50px; height: 50px; font-weight: 700"
         >
         </lord-icon>
@@ -212,7 +217,7 @@
           method="post"
           name="Contact Form"
           data-netlify="true"
-          class="cta__form d_f fd_c"
+          class="cta__form d_f fd_c bottom__column hidden__bottom"
         >
           <input type="text" name="fullname" placeholder="Full Name" />
           <input type="email" name="email" placeholder="Email Address" />
@@ -234,7 +239,7 @@
     </section>
     <section class="footer__section">
       <div class="footer__container d_f fd_c ai_c">
-        <a href="#hero" class="back-top-top">
+        <a href="#hero" class="back-top-top bottom__column hidden__bottom">
           <lord-icon
             src="https://cdn.lordicon.com/eflfmgmj.json"
             trigger="loop"
@@ -244,7 +249,7 @@
           >
           </lord-icon
         ></a>
-        <div class="footer__socials d_f">
+        <div class="footer__socials d_f bottom__column hidden__bottom">
           <a href="#" target="_blank" class="footer__socials--link">
             <i class="fa-brands fa-twitter"></i>
           </a>
@@ -268,12 +273,7 @@
     referrerpolicy="no-referrer"
   ></script>
   <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-
-  <script
-    defer
-    src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-  ></script>
-
+  <script defer src="./Scripts/scrollReveal.js"></script>
   <script defer type="module" src="./index.js"></script>
   <!-- <script type="text/javascript">
     VanillaTilt.init(document.querySelectorAll(".project__img--area"), {
