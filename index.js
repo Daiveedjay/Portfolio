@@ -1,7 +1,7 @@
 "use strict";
 
 const allSections = document.querySelectorAll("section");
-// console.log(allSections);
+console.log(allSections);
 const options = {
   root: null,
   threshold: 0.3,
