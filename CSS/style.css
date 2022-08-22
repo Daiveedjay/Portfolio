@@ -442,7 +442,24 @@ input:checked + label .fa-sun {
   font-weight: 700;
 }
 
-.hidden {
+.hidden__left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.hidden__right {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.left__column {
+  transition: all 0.5s ease-in-out;
+}
+.right__column {
+  transition: all 0.5s ease-in-out;
+}
+
+/* .hidden {
   opacity: 0;
   transform: translateX(100%);
 }
@@ -462,7 +479,7 @@ input:checked + label .fa-sun {
 }
 .right__column {
   transition: all 1.5s ease-in-out;
-}
+} */
 
 /* .js-tilt {
   border: 2px solid red;
