@@ -542,7 +542,7 @@ input:checked + label .fa-sun {
 
 .back-to-home {
   position: absolute;
-  bottom: -40%;
+  bottom: -50%;
   left: 35px;
 }
 

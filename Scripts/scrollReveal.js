@@ -30,12 +30,10 @@ document.querySelectorAll(".right__column").forEach((column) => {
 function callback(entries, observer) {
   const [entry] = entries;
 
-  console.log(entry);
   if (!entry.isIntersecting) return;
 
   //   Get the class name of the target section that came into view
   const curSectionsName = entry.target.getAttribute("class");
-  console.log(curSectionsName);
 
   // Callback funtion for about section
   if (curSectionsName === "about__section") {
