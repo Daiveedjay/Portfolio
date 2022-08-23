@@ -132,7 +132,8 @@
   .about__content--bio,
   .tech__stack--skill,
   .cta__contact--link {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 
   .tech__stack--skill i {
