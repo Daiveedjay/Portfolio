@@ -129,6 +129,25 @@
     font-size: 3.5rem;
   }
 
+  .about__content--bio,
+  .tech__stack--skill,
+  .cta__contact--link {
+    font-size: 1.6rem;
+  }
+
+  .tech__stack--skill i {
+    font-size: 2rem;
+  }
+
+  .project__description {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .cta_button {
+    font-size: 1.8rem;
+  }
+
   .cta__contact--link,
   .cta__form {
     width: 100%;
