@@ -12,7 +12,7 @@
       content="[Daiveed], [David Jaja], Front-End Developer"
     />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[David Jaja] | Developer" />
+    <meta name="description" content="Remote Junior Web Developer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +23,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./IMG/favicon-32x32.png"
+      href="./IMG/Logo-dark.png"
     />
 
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -33,28 +33,42 @@
   <body>
     <!-- HERO SECTION -->
     <section id="hero" class="hero__section d_f ai_c fd_c">
-      <nav class="d_f jc_sb ai_c mw-medium">
-        <span class="logo"><img src="./IMG/favicon-32x32.png" alt="" /></span>
-        <div class="switch-container">
-          <input type="checkbox" id="switch" />
-          <label for="switch">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
-            <span class="ball"></span>
-          </label>
-        </div>
-      </nav>
+      <header>
+        <nav class="nav d_f jc_sb ai_c sticky">
+          <a href="#hero" class="logo">
+            <img
+              class="logo-icon logo-active"
+              src="./IMG/Logo-dark.png"
+              alt=""
+            />
+            <img
+              class="logo-icon"
+              src="./IMG/Logo-light.png"
+              alt=""
+              data-icon="2"
+            />
+          </a>
+          <div class="switch-container">
+            <input type="checkbox" id="switch" />
+            <label for="switch">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </nav>
+      </header>
 
       <div class="hero__text-container d_f fd_c ai_s jc_c mw-medium">
         <h1 class="hero__lead--text">
           Hi, my name is <span>David Jaja</span><br />
           I'm a Junior Front-End Developer
         </h1>
-        <a class="hero--button btn btn--primary" href="#"> Know More</a>
+        <a class="hero--button btn btn--primary" href="#about"> Know More</a>
       </div>
     </section>
     <!-- ABOUT SECTION -->
-    <section class="about__section">
+    <section id="about" class="about__section">
       <div class="about__container">
         <h2 class="about--header ta_c header_primary">ABOUT ME</h2>
         <div class="about__content d_f">
@@ -63,13 +77,12 @@
           </div>
           <div class="about__content--text d_f fd_c jc_c right__column">
             <p class="about__content--bio">
-              I'm a 20 year old Nigerian Junior Front-End Developer, passionate
-              about developing sustainable and scalable social and technical
-              systems to create impact. I occationally watch Anime and
-              Football⚽ matches during my leisure periods. Some of my goals
-              would include picking up a JavaScript framework, a CSS framework
-              and some much needed work experience, on my way to landing my
-              first Tech role.
+              I'm a 20-year-old junior front-end developer from Nigeria who is
+              passionate about building impactful, scalable social and technical
+              systems. In my free time, I occasionally watch anime and football
+              games ⚽. On my way to getting my first tech job, some of my goals
+              would be to learn the JavaScript and CSS frameworks and gain some
+              much-needed work experience.
             </p>
             <div class="tech__stack-container">
               <h2 class="about__content--header">My Current Tech Stack</h2>
@@ -120,11 +133,10 @@
         <div class="project__text--area d_f fd_c left__column hidden__left">
           <h2 class="project__name header_secondary">Space Tourism</h2>
           <p class="project__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
-            modi dolore minus earum ullam enim quo, itaque facilis ducimus
-            corporis? Suscipit perspiciatis illo temporibus totam facere aliquid
-            placeat minus eligendi repellat itaque? Ducimus laborum velit qui
-            cumque numquam iusto suscipit at doloribus earum magnam.
+            The beauty of our solar system and the idea of space travel served
+            as the inspiration for this project, which featured some fascinating
+            planets, our gallant space crew for the expeditions, and some of the
+            tools used in space exploration.
           </p>
           <div class="project__buttons d_f">
             <a
@@ -156,11 +168,11 @@
         <div class="project__text--area d_f fd_c left__column">
           <h2 class="project__name header_secondary">Blogr</h2>
           <p class="project__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
-            modi dolore minus earum ullam enim quo, itaque facilis ducimus
-            corporis? Suscipit perspiciatis illo temporibus totam facere aliquid
-            placeat minus eligendi repellat itaque? Ducimus laborum velit qui
-            cumque numquam iusto suscipit at doloribus earum magnam.
+            Blogr is an fascinatin user-friendly publishing platform which aids
+            users to promote their online brand. Blogr features an exceedingly
+            intuitive interface which lets you focus on one thing: creating
+            content. The editor supports management of multiple blogs and allows
+            easy manipulation of embeds such as images, videos, and Markdown.
           </p>
           <div class="project__buttons d_f">
             <a
@@ -189,11 +201,10 @@
         <div class="project__text--area d_f fd_c left__column">
           <h2 class="project__name header_secondary">Huddle</h2>
           <p class="project__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea suscipit
-            modi dolore minus earum ullam enim quo, itaque facilis ducimus
-            corporis? Suscipit perspiciatis illo temporibus totam facere aliquid
-            placeat minus eligendi repellat itaque? Ducimus laborum velit qui
-            cumque numquam iusto suscipit at doloribus earum magnam.
+            Huddle is a platform used to effectively create communities to
+            easily connect creators to their users. It features a beautiful
+            interface and lots of exciting functionalities to keep everyone
+            engaged.
           </p>
           <div class="project__buttons d_f">
             <a
@@ -220,7 +231,7 @@
       </div>
       <div class="more__projects d_f jc_c">
         <a
-          href="#"
+          href="./HTML/projects.html"
           class="more__projects--button ta_c mw-medium btn btn--primary"
           >See more Projects</a
         >
