@@ -1,12 +1,6 @@
 //Dark mode toggle
 const switchTheme = document.querySelector("#switch");
 
-// const activeLogo = document.querySelector("logo-active");
-
-// const logos = document.querySelectorAll(".logo-icon");
-
-// console.log(logos);
-
 switchTheme.addEventListener("click", function () {
   document.body.classList.toggle("dark__mode");
   document.lightModeLogo.classList.toggle("logo-active");
@@ -37,10 +31,12 @@ const stickyNav = function (entries) {
 const HeroObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
+  rootMargin: "-100px",
 });
 HeroObserver.observe(heroSection);
 
-// OLD METHOD OF MAKING A STICKY NAVIGATION
+// OLD METHOD OF MAKING A STICKY NAVIGATION (DO NOT RECOMMEND)
+
 // const initialCoords = aboutSection.getBoundingClientRect();
 // console.log(initialCoords);
 

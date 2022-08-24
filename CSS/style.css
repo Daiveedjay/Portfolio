@@ -71,11 +71,13 @@ nav {
   width: 100%;
   padding: 2rem;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  transition: none;
 }
 
 .sticky {
   position: fixed;
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
   z-index: 2;
   transition: all ease-in-out 0.3s;
 }
@@ -451,7 +453,6 @@ input:checked + label .fa-sun {
   font-weight: 700;
   font-size: 1.6rem;
   background: none;
-  color: var(--dark-text-color);
   color: var(--neutral-color);
   border: 2px solid var(--neutral-color) !important;
   cursor: pointer;
@@ -529,7 +530,6 @@ input:checked + label .fa-sun {
 }
 
 /* MORE PROJECTS PAGE STYLING */
-
 .more__projects--section {
   position: relative;
   padding-top: 0;

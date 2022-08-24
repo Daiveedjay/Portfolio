@@ -42,6 +42,7 @@
   }
 }
 /* 900px and below */
+/* Tablet */
 @media (max-width: 56.25em) {
   .hero__text-container {
     align-items: center;
