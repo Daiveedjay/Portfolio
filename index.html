@@ -304,10 +304,12 @@
         >
 
         <form
-          name="Contact Form"
+          method="POST"
+          data-netlify="true"
+          name="contact"
           class="cta__form d_f fd_c bottom__column hidden__bottom"
         >
-          <input type="text" name="fullname" placeholder="Full Name" />
+          <input type="text" name="name" placeholder="Full Name" />
           <input type="email" name="email" placeholder="Email Address" />
           <textarea
             name="message"
