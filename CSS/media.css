@@ -124,6 +124,8 @@
     width: 100%;
   }
 }
+
+/* Phone */
 /* 400px and below */
 @media (max-width: 25em) {
   .hero__lead--text {
