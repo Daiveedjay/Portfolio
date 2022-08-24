@@ -4,6 +4,16 @@ This is the solution to my portfolio website [Portfolio Website Codebase](https:
 
 - Live Site URL: [Netlify Portfolio](https://david-portfolio-main.netlify.app)
 
+### Preview
+
+![](./IMG/Portfolio.webp)
+![](./IMG/Preview.mp4)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/Daiveedjay/Portfolio)
+- Live Site URL: [Add live site URL here](https://david-portfolio-main.netlify.app)
+
 ### Built with
 
 - Semantic HTML5 markup
