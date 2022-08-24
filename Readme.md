@@ -6,8 +6,9 @@ This is the solution to my portfolio website [Portfolio Website Codebase](https:
 
 ### Preview
 
-![](./IMG/Portfolio.webp)
-![](./IMG/Preview.mp4)
+<!-- ![](./IMG/Portfolio.webp) -->
+
+![](./IMG/Preview-gif.gif)
 
 ### Links
 
