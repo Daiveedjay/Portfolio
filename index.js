@@ -3,7 +3,7 @@ const switchTheme = document.querySelector("#switch");
 
 switchTheme.addEventListener("click", function () {
   document.body.classList.toggle("dark__mode");
-  document.lightModeLogo.classList.toggle("logo-active");
+  document.querySelector(".lightModeLogo")?.classList.toggle("logo-active");
   if (document.body.classList.contains("dark__mode")) {
     localStorage.setItem("themeMode", "dark__mode");
   } else {
@@ -13,6 +13,7 @@ switchTheme.addEventListener("click", function () {
 
 // Handle darkmode
 const mode = localStorage.getItem("themeMode");
+console.log(mode);
 if (mode === "dark__mode") {
   document.body.classList.add(mode);
 }

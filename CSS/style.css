@@ -24,6 +24,10 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: var(--primary-color-light);
+}
+
 ::placeholder {
   font-family: var(--body-font);
 }
