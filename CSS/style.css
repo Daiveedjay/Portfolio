@@ -281,10 +281,13 @@ input:checked + label .fa-sun {
 
 .about__content--image {
   padding: 1rem 2rem;
+
+  overflow: hidden;
 }
 .about__content--image img {
   width: 30rem;
   height: 40rem;
+  border-radius: 5px;
 }
 
 .about__content--bio {
@@ -358,6 +361,7 @@ input:checked + label .fa-sun {
   transform-style: preserve-3d;
   perspective: 1000px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .project__img--area:hover {
